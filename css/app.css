@@ -1,0 +1,127 @@
+:root {
+    --desktop-width: 1240px;
+    --light-color: #DCD6D2;
+    --blue-color: #6C7FC2;
+    --black-color: #35393D;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--black-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: var(--desktop-width);
+}
+
+.page-header {
+    width: 100%;
+    background-color: white;
+}
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.page-header__logo {
+    width: 53px;
+}
+
+.page-header__logo img {
+    width: 100%;
+}
+
+.page-header__nav-menu {
+    flex-grow: 1;
+}
+
+.page-header__list {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 60px;
+    padding: 0;
+}
+
+.page-header__item {
+    margin: 0 0 0 40px;
+    padding: 20px 0;
+}
+
+.page-header__item:first-child {
+    margin: 0;
+}
+
+.page-header__item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-header__sub-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.page-header__sub-menu:after {
+    content: "";
+    margin: 5px 0 0 6px;
+    border: 5px solid transparent;
+    border-top-color: var(--black-color);
+}
+
+.page-header__sub-menu:hover .page-header__sub-list {
+    display: block;
+}
+
+.page-header__sub-list {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    margin: 0 0 0 -20px;
+    padding: 20px;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.page-header__sub-list:hover {
+    display: block;
+}
+
+.page-header__sub-item {
+    margin: 0 0 10px;
+}
+
+.page-header__sub-item:last-child {
+    margin: 0;
+}
+
+.page-header__search {
+    padding: 8px 24px 8px 12px;
+    border: 1px solid rgb(220, 214, 210, .5);
+    border-radius: 5px;
+    background-image: url("/img/search.svg");
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    background-position: right 10px center;
+}
+
+.page-header__search::placeholder {
+    font-size: 16px;
+    color: rgb(220, 214, 210, 1);
+}
+
+.page-header__search:focus,
+.page-header__search:focus-visible {
+    border: 1px solid var(--light-color);
+    box-shadow: 0 0 0 1px var(--light-color);
+    outline: none;
+}
