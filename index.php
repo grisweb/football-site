@@ -23,7 +23,7 @@
 
 <main class="page-main">
     <div class="container">
-        <div class="main-container">
+        <div class="main-container home-page">
             <section class="slider-news section">
                 <div class="slider">
                     <div class="slider__wrap">
@@ -117,27 +117,7 @@
     </div>
 </main>
 
-<footer class="page-footer">
-    <div class="container">
-        <div class="page-footer__wrap">
-            <img class="page-footer__logo" src="img/logo-footer.svg" alt="">
-            <div class="page-footer__reserved">
-                © 1999-2022, Российский футбольный союз
-            </div>
-            <div class="page-footer__social-list">
-                <a href="" class="page-footer__social">
-                    <img src="img/vk.svg" alt="">
-                </a>
-                <a href="" class="page-footer__social">
-                    <img src="img/telegram.svg" alt="">
-                </a>
-                <A href="" class="page-footer__social">
-                    <img src="img/youtube.svg" alt="">
-                </A>
-            </div>
-        </div>
-    </div>
-</footer>
+<?php include './templates/footer.php' ?>
 
 <script type="application/javascript" src="js/app.js"></script>
 <script type="application/javascript" src="js/slider.js"></script>
